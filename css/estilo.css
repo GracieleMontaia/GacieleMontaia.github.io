@@ -132,19 +132,38 @@ div#area-principal > h2
 }
 
 
+
 footer
 {
     position:relative;
     left:5%;
     top:10px;
 
-    width:90%;
-    height:50px;
+    width:93%;
+    height:60px;
     
     border-top: 2px solid gray;
-
+    margin-top: 20px;
+    
     clear:left;
  
+}
+
+footer p 
+{
+    float:left;
+}
+
+footer p
+{
+    text-indent:0;
+    margin-right:20px;
+ 
+}
+
+footer img
+{
+    float:left;
 }
 
 /************************/
@@ -210,6 +229,16 @@ footer
     text-indent:10px;
 
     background-color: rgba( 0 ,0 ,0 , 0.3 );
+}
+
+footer img
+{
+    margin-top:10px;
+}
+
+#credenciais
+{
+    margin-left:35%;
 }
 
 }
@@ -284,9 +313,20 @@ footer
     background-color: rgba( 0 ,0 ,0 , 0.3 );
 }
 
+footer img
+{
+    margin-top:10px;
 }
 
-@media( max-width: 1023px )
+#credenciais
+{
+    margin-left:15%;
+}
+
+
+}
+
+@media( min-width: 768px ) and ( max-width: 1023px )
 {
 
 #area-principal
@@ -306,7 +346,7 @@ nav a
     padding-right:10px;
     
     color:white;
-    font-size:240%;
+    font-size:210%;
     
     margin-top:0;
     
@@ -349,7 +389,7 @@ nav a
 {
     position:relative;
     left:50%;
-    top: -37px;
+    top: -40px;
     
     width:90%;
     height:30px;
@@ -363,10 +403,19 @@ nav a
     
 }
 
+footer
+{
+    font-size:85%;
+}
+#credenciais
+{
+    margin-left:15%;
 }
 
 
-@media( max-width: 400px )
+}
+
+@media (min-width: 320px) and (   max-width: 375px )
 {
 
 .logo
@@ -430,9 +479,15 @@ nav a:hover
     margin-bottom:30px;
 }
 
+
 footer
 {
     top:80px;
+}
+
+footer p
+{
+    float:none;
 }
 
 }
