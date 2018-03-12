@@ -86,7 +86,7 @@ nav li p
     
     width:85%;
     
-    background-color: rgb( 3, 68 , 254 );
+    background-color: rgb( 242, 242 , 242 );
     
     border-radius: 5px;
     
@@ -241,8 +241,6 @@ footer img
     top: -60px;
     
     text-indent:10px;
-
-    background-color: rgba( 3, 68 , 254, 0.4 );
     
     border-radius:4px;
 }
@@ -331,7 +329,6 @@ footer img
     
     text-indent:10px;
     
-    background-color: rgba( 3, 68 , 254 ,0.4 );
     border-radius:4px;
     
 }
@@ -419,9 +416,8 @@ nav a
     
     text-indent:10px;
     
-    background-color: rgba( 3, 68 , 254 ,0.4 );
     border-radius:4px;
-    
+
     margin-left: -45%;
     
 }
@@ -458,7 +454,8 @@ h2
 
 nav
 {
-    width:80%;
+    width:100%;
+    left:0;
 }    
 
 nav ul
@@ -488,12 +485,12 @@ nav a:hover
 
 #area-principal
 {
-    position:relative;
-    left:5%;
+    
+    left:0;
     
     top:80px;
     
-    width:90%;
+    width:100%;
     
     font-size:20px;
     
@@ -511,6 +508,8 @@ footer
 {
     top:80px;
     margin-top:40px;
+    width:100%;
+    left:0;
     
 }
 
@@ -527,6 +526,16 @@ footer p
 #galeria figcaption
 {
     top: -38px;
+}
+
+#galeria figure
+{
+    position:relative;
+    
+    margin-left:0;
+  
+    width:100%;
+    
 }
 
 }
