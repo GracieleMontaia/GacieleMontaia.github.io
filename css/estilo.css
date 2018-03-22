@@ -113,6 +113,12 @@ h2
     font-size:50px;
 }
 
+h3
+{
+    padding: 0 20px;
+    font-size:40px;
+}
+
 .logo
 {
     
@@ -445,6 +451,10 @@ footer
 h2
 {
     font-size:40px;
+}
+h3
+{
+    font-size:30px;
 }
 
 nav
