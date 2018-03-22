@@ -23,6 +23,8 @@ nav
     
     width:90%;
     height:70px;
+    
+    border-bottom:2px solid gray;
 
 }
 
@@ -56,8 +58,6 @@ nav ul
 {
     height:100%;
     width:100%;
-    
-    border-bottom: 2px solid gray;
 }
 
 nav li
@@ -82,9 +82,9 @@ nav li p
 {
     
     position:relative;
-    left:9%;
+    left:5%;
     
-    width:85%;
+    width:90%;
     
     background-color: rgb( 242, 242 , 242 );
     
@@ -109,7 +109,7 @@ nav li p
 
 h2
 {
-    padding: 30px 20px 0 20px;
+    padding: 0 20px;
     font-size:50px;
 }
 
@@ -146,6 +146,13 @@ h2
 }
 
 
+#galeria img
+{
+    width: 100%;
+    height: 100%;
+    
+}
+
 
 footer
 {
@@ -153,7 +160,7 @@ footer
     left:5%;
     top:10px;
 
-    width:93%;
+    width:90%;
     height:60px;
     
     border-top: 2px solid gray;
@@ -215,34 +222,30 @@ footer img
     
     border-radius: 5px;
     
-    clear:left; 
+    clear:left;
 }
 
 #galeria figure
 {
     position:relative;
-    left:4%;    
+    left:2.5%;
 
-    margin: 20px 15px 0 15px;
+    margin: 10px 10px 0 10px;
     
     float:left;
-}
-
-#galeria img
-{
-    width:320px;
-    height:320px;
+    
+    width:360px;
+    height:360px;
     
 }
 
 #galeria figcaption
 {
     position:relative;
-    top: -60px;
+    top: -16%;
     
     text-indent:10px;
     
-    border-radius:4px;
 }
 
 footer img
@@ -250,7 +253,7 @@ footer img
     margin-top:10px;
 }
 
-#credenciais
+.credenciais
 {
     margin-left:35%;
 }
@@ -291,8 +294,7 @@ footer img
 {
     width:100%;
     height:1100px;
-    
-    margin-top:40px;
+   
     border-radius: 5px;
     
     clear:left;
@@ -303,23 +305,16 @@ footer img
 {
     position:relative;
     left:30%;
+
+    margin:20px;
     
     width: 320px;
     height: 320px;
-    
-    margin: 20px;
     
     margin-left:-160px;
     margin-right:180px;
     
     float:left;
-}
-
-#galeria img
-{
-    width: 320px;
-    height: 320px;
-    
 }
 
 #galeria figcaption
@@ -337,12 +332,6 @@ footer img
 {
     margin-top:10px;
 }
-
-#credenciais
-{
-    margin-left:15%;
-}
-
 
 }
 
@@ -389,7 +378,6 @@ nav a
 #galeria
 {
     width:100%;
-    
     margin-top:40px;
     
 }
@@ -426,20 +414,27 @@ footer
 {
     font-size:14px;
 }
-#credenciais
+.credenciais
 {
-    margin-left:15%;
+    float:right;
 }
 
 
 }
 
-@media ( max-width:400px )
+@media ( max-width:800px )
 {
 
 .logo
 {
-    width:0px;
+    width:0;
+    height:40px;
+}
+
+.logo img
+{
+    width:40px;
+    height:40px;
 }
 
 .logo h2
@@ -454,14 +449,15 @@ h2
 
 nav
 {
-    width:100%;
-    left:0;
-}    
 
-nav ul
-{
+    left:0;
+    
+    margin-top:20px;
+    width:100%;
     height:150px;
-}
+    
+
+}    
 
 nav li
 {
@@ -488,17 +484,13 @@ nav a:hover
     
     left:0;
     
-    top:80px;
-    
     width:100%;
     
-    font-size:20px;
-    
+    font-size:25px;
 }
 
 #area-principal > h2
 {
-    text-align:center;
     margin:0;
     margin-bottom:30px;
 }
@@ -506,8 +498,6 @@ nav a:hover
 
 footer
 {
-    top:80px;
-    margin-top:40px;
     width:100%;
     left:0;
     
@@ -518,15 +508,16 @@ footer p
     float:none;
 }
 
-#credenciais
+.credenciais
 {
+    float:none;
     margin:0;
 }
 
 #galeria figcaption
 {
     top: -38px;
-}
+}   
 
 #galeria figure
 {
