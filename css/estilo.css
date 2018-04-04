@@ -1,8 +1,7 @@
 /*********formatação comun*/
 body
 {
-
-    background-image: url( ../img/back-ground.jpg);
+    background-image: url( ../img/background.png);
 }
 
 body p
@@ -173,8 +172,6 @@ footer
     
     border-top: 2px solid black;
     margin-top: 20px;
-
-    color:white;
     
     font-weight:bold;
     
@@ -197,6 +194,13 @@ footer p
 footer img
 {
     float:left;
+}
+
+.credenciais
+{
+    float:left;
+    margin-right:10px;
+
 }
 
 /************************/
@@ -421,10 +425,6 @@ footer
 {
     font-size:14px;
 }
-.credenciais
-{
-    float:right;
-}
 
 
 }
@@ -482,7 +482,7 @@ nav a
     font-size:18px;
     text-decoration:underline;
     background-color:transparent;
-    color:white;
+    color:black;
 }
 
 nav a:hover
@@ -522,7 +522,6 @@ footer p
 .credenciais
 {
     float:none;
-    margin:0;
 }
 
 #galeria figcaption
