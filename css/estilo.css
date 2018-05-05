@@ -92,6 +92,11 @@ nav li p
     
 }
 
+#area-principal h2, h3
+{
+    color: rgb( 3, 68 , 254 );
+}
+
 #area-principal p
 {
     padding-left: 10px;
