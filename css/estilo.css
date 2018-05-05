@@ -1,13 +1,4 @@
 /*********formatação comun*/
-
-#quem-somos
-{
-
-    float:left;
-    clear:right;
-    
-}
-
 #quem-somos h2
 {
     color: rgb( 3, 68 , 254 );
@@ -21,11 +12,6 @@ body
 body p
 {
     text-indent: 20px;
-}
-
-img
-{
-    border-radius:4px;
 }
 
 nav
@@ -99,9 +85,7 @@ nav li p
     
     width:90%;
     
-    background-color: rgb( 242, 242 , 242 );
-    
-    border-radius: 5px;
+    background-color: #ddd;
     
     padding:4px;
     margin-top:40px;
@@ -120,6 +104,22 @@ nav li p
     list-style: circle;
     margin-top:4px;
     font-size:25px;
+}
+
+#galeria
+{
+    
+    position:relative;
+    left:0.5%;
+    width:99%;
+    height:600px;
+
+}
+
+#galeria img
+{
+    width:100%;
+    height:80%;
 }
 
 h2
@@ -167,14 +167,6 @@ h3
 }
 
 
-#galeria img
-{
-    width: 100%;
-    height: 100%;
-    
-}
-
-
 footer
 {
     position:relative;
@@ -188,9 +180,7 @@ footer
     margin-top: 20px;
     
     font-weight:bold;
-    
-    clear:left;
- 
+  
 }
 
 footer p 
@@ -227,53 +217,6 @@ footer img
     font-size:40px;
 }
 
-#foto_oficina
-{
-    width:640x;
-    height:360px;
-    
-    box-shadow: 2px 2px 2px black;
-    border-radius:4px;
-    
-    margin:0 20px;
-
-    
-}
-
-#galeria
-{
-    
-    position:relative;
-    top:20px;
-    
-    width:100%;
-    height:780px;
-    
-    border-radius: 5px;
-    
-    clear:left;
-}
-
-#galeria figure
-{
-    position:relative;
-    left:-40px;
-    float:left;
-    
-    width:1200px;
-    height:600px;
-    
-    
-}
-
-#galeria figcaption
-{
-    position:relative;
-    top: -16%;
-    
-    text-indent:10px;
-    
-}
 
 footer img
 {
@@ -296,57 +239,9 @@ footer img
 {
     font-size:30px;
 }
-
-
-
-#foto_oficina
-{
-    width:540x;
-    height:300px;
-    
-    box-shadow: 2px 2px 2px black;
-    border-radius:4px;
-    
-    margin:0 10px;
-    
-    float:left;
-}
-
 #galeria
 {
-    width:100%;
-    height:600px;
-   
-    border-radius: 5px;
-    
-    clear:left;
-    
-}
-
-#galeria figure
-{
-    position:relative;
-    left:3%;
-
-    margin:20px;
-    
-    width: 90%;
-    height: 90%;
-    
-    margin-right:180px;
-    
-    float:left;
-}
-
-#galeria figcaption
-{
-    position:relative;
-    top: -45px;
-    
-    text-indent:10px;
-    
-    border-radius:4px;
-    
+    height:500px;
 }
 
 footer img
@@ -382,54 +277,10 @@ nav a
     
 }
 
-#foto_oficina
-{
-    position:relative;
-    left: 50%;
-    
-    width:90%;
-    height:90%;
-    
-    margin-left: -45%;
-    
-    box-shadow: 2px 2px 2px black;
-
-}
-
 #galeria
 {
-    width:100%;
-    margin-top:40px;
-    
-}
-
-
-
-#galeria img
-{
-    position:relative;
-    left:50%;
  
-    width: 90%;
-    height:90%;    
-    margin-left: -45%;
-    
-}
-
-#galeria figcaption
-{
-    position:relative;
-    left:50%;
-    top: -50px;
-    
-    width:90%;
-    height:40px;
-    
-    text-indent:10px;
-    
-    border-radius:4px;
-
-    margin-left: -45%;
+    height:400px;
     
 }
 
@@ -444,7 +295,7 @@ footer
 @media ( max-width:800px )
 {
 
-.logo
+    .logo
 {
     width:0;
     height:40px;
@@ -534,22 +385,6 @@ footer p
 .credenciais
 {
     float:none;
-}
-
-#galeria figcaption
-{
-    top: -38px;
-}   
-
-#galeria figure
-{
-    position:relative;
-    
-    margin-left:0;
-  
-    width:100%;
-    height:60%;
-    
 }
 
 }

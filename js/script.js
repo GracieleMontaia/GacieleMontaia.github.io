@@ -11,7 +11,7 @@ function ChangeImage( )
     slider.src = "img/img"+i+".jpg";
     
     i++;
-    if( i == 8 )
+    if( i == 9 )
     {
         i = 1;
     }
