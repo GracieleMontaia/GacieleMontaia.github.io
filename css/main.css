@@ -42,3 +42,17 @@
     border-radius: 5px;
     border: 2px solid white;
 }
+
+@media( min-height : 1080px )
+{
+
+#board td
+{
+    width: 265px;
+    height:265px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+
+}
