@@ -30,12 +30,12 @@
     margin:0;
 }
 
-#tabuleiro
+#board
 {
     margin:auto;
 }
 
-#tabuleiro td
+#board td
 {
     width: 145px;
     height:145px;

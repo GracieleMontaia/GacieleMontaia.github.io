@@ -1,5 +1,5 @@
 
-var tabuleiro = 
+var board = 
 [   0, 0, 0, 0, 
     0, 0, 0, 0,
     0, 0, 0, 0,
@@ -7,81 +7,68 @@ var tabuleiro =
 ];
 
 var selected = -1;
+var completed = 0;
 
-
-function AlterarTabuleiro( index )
+function ChangeBoard( index )
 {
-    var i;
-    
-    if( tabuleiro[index] == 1 )
-    {
-        tabuleiro[index] = 0;
-        document.getElementById( 'cell_'+index ).style.borderColor = 'white';
-        selected = -1;
-        
-    }
-    else if( tabuleiro[index] == 0 )
+
+    var cell_slct = document.getElementById('cell_'+selected );
+    var cell_idx  = document.getElementById('cell_'+index );
+    var i;    
+   
+    if( board[index] == 0 )
     {
        
-        if( selected == -1 )
+        if( selected == -1 )// nenhuma celula selecionada ainda
         {
-            tabuleiro[index] = 1;
-            document.getElementById( 'cell_'+index ).style.borderColor = 'black';
+            board[index] = 1;
+            cell_idx.style.borderColor = 'black'
             selected = index;
         }
-        else if( document.getElementById('cell_'+selected ).style.backgroundColor == 
-                 document.getElementById('cell_'+index ).style.backgroundColor)
+        else if( cell_slct.style.backgroundColor == cell_idx.style.backgroundColor )// selecionou duas celulas com cores iguais
         {
             
-            document.getElementById('cell_'+selected ).style.backgroundColor = 'white';
-            document.getElementById('cell_'+selected ).style.borderColor = 'white';
-            document.getElementById('cell_'+index ).style.backgroundColor = 'white';
-            document.getElementById('cell_'+index ).style.borderColor = 'white';
-
-            selected = tabuleiro[selected] = tabuleiro[index] = -1;
+            cell_slct.style.borderColor = cell_slct.style.backgroundColor = 'white';
+            cell_idx.style.borderColor  = cell_idx.style.backgroundColor  = 'white';
             
-            i = 0;
+            selected = board[selected] = board[index] = -1;
             
-            while( i < tabuleiro.length && tabuleiro[i] == -1 )
+            if( ++completed == 8 )
             {
-                i++;
-            }
-            
-            if( i == tabuleiro.length )
-            {
-                Colorir( );
-                
-                for( i = 0 ; i < tabuleiro.length ; i++ )
+                completed = 0;
+                for( i = 0 ; i < board.length ; i++ )
                 {
-                    tabuleiro[i] = 0;
+                    board[i] = 0;
                 }
                 
-                selected = -1;
+                Colorize( );
             }
             
-           
-            
-           
         }
-        else
+        else// selecionou celulas com cores direferentes
         {
-            document.getElementById('cell_'+selected ).style.borderColor = 'white';
+            cell_slct.style.borderColor = 'white';
             selected = -1;
         }
         
         
     }
+    else if( board[index] == 1 )// deselecionar a celula
+    {
+        board[index] = 0;
+        cell_idx.style.borderColor = 'white';
+        selected = -1;
+    }
     
 }
 
 
-function Colorir( )
+function Colorize( )
 {
-    
-    var cellName = 'cell_';
-    var cell_a, cell_b
+   
+    var cell_a, cell_b;
     var cells = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
-    var cores = ['red','green','blue','gray','purple','orange','brown','yellow'];
+    var colors = ['red','green','blue','gray','purple','orange','brown','yellow'];
     var idx ;
     var i;
     
@@ -89,17 +76,17 @@ function Colorir( )
     {
         
         idx = Math.floor( Math.random( ) * cells.length );
-        cell_a = document.getElementById( cellName+cells[idx] );
+        cell_a = document.getElementById( 'cell_'+cells[idx] );
         cells.splice(idx,1);
         
         idx = Math.floor( Math.random( ) * cells.length );
-        cell_b = document.getElementById( cellName+cells[idx] );
+        cell_b = document.getElementById( 'cell_'+cells[idx] );
         cells.splice(idx,1);
 
         if( cell_a != null && cell_b != null )
         {
-            cell_a.style.backgroundColor = cores[i];
-            cell_b.style.backgroundColor = cores[i];
+            cell_a.style.backgroundColor = colors[i];
+            cell_b.style.backgroundColor = colors[i];
         }
        
     }
