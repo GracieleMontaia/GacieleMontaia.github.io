@@ -1,0 +1,44 @@
+
+@font-face
+{
+    font-family: Envy-Code;
+    src : url( ../font/envy-code/envy-code-r.ttf );
+}
+
+@font-face
+{
+    font-family: Rubik;
+    src : url( ../font/rubik/Rubik-Regular.ttf );
+}
+
+@font-face
+{
+    font-family: Rubik;
+    src : url( ../font/rubik/Rubik-Italic.ttf );
+    font-style:italic;
+}
+
+#main  h1
+{
+   
+    float:right;
+    text-align:center;
+    font-size:54px;
+    font-family: Rubik;
+    color:rgb( 0 , 0 ,232 );
+    
+    margin:0;
+}
+
+#tabuleiro
+{
+    margin:auto;
+}
+
+#tabuleiro td
+{
+    width: 145px;
+    height:145px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
